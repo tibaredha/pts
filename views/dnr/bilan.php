@@ -1,14 +1,14 @@
 <?php 
 verifsession();
 view::button('don',$this->user[0]['id']);
-function dateFR2US($date)//01/01/2013
-{
-$J      = substr($date,0,2);
-$M      = substr($date,3,2);
-$A      = substr($date,6,4);
-$dateFR2US =  $A."-".$M."-".$J ;
-return $dateFR2US;//2013-01-01
-}
+// function dateFR2US($date)//01/01/2013
+// {
+// $J      = substr($date,0,2);
+// $M      = substr($date,3,2);
+// $A      = substr($date,6,4);
+// $dateFR2US =  $A."-".$M."-".$J ;
+// return $dateFR2US;//2013-01-01
+// }
 $diff    = abs(time() - strtotime(dateFR2US(trim($this->user[0]['DATENAISSANCE'])))); 
 $years   = floor($diff / (365*60*60*24));        
 $months  = floor(($diff - $years * 365*60*60*24) / (30*60*60*24));

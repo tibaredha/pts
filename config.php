@@ -1631,8 +1631,9 @@ define('uploadLocationrec', 'd:\\mvc/public/webcam/rec/');
 define('dump_mysql', 'd:/mvc/data/datasql/');
 define('photosmfx', 'd:\\mvc/public/webcam/');
 
+define('pts',"pts");
+define('URL', 'http://'.$_SERVER['SERVER_NAME'].dirname($_SERVER['PHP_SELF']).'/');
 
-define('URL', 'http://'.$_SERVER['SERVER_NAME'].'/mvc/');
 define('LIBS', 'libs/');
 define('MVC', 'GPTS');
 define('DB_TYPE', 'mysql');
